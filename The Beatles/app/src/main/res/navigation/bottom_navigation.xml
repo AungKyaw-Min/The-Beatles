@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/bottomMainFragment">
+    <fragment
+        android:id="@+id/bottomMainFragment"
+        android:name="com.example.TheBeatles.BottomMainFragment"
+        android:label="fragment_bottom_main"
+        tools:layout="@layout/fragment_bottom_main" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.TheBeatles.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomSecondFragment"
+        android:name="com.example.TheBeatles.BottomSecondFragment"
+        android:label="fragment_bottom_second"
+        tools:layout="@layout/fragment_bottom_second" >
+        <action
+            android:id="@+id/secondToSongs"
+            app:destination="@id/songFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songFragment"
+        android:name="com.example.TheBeatles.SongFragment"
+        android:label="fragment_songs"
+        tools:layout="@layout/fragment_songs" >
+        <action
+            android:id="@+id/songToVideo"
+            app:destination="@id/videoFragment" />
+    </fragment>
+</navigation>
