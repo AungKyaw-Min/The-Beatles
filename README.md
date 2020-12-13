@@ -6,9 +6,9 @@ An online application in which contains the Beatles albums and songs and clickin
 <p>The slideshow of The Beatles.</p>
 
 ## Albums Fragment
-![second-page](album.JPG) 
+![second-page](albums.JPG) 
 <p>Album page of The Beatles.</p>
 
 ## Song Fragment
-![song-page](song.JPG) 
+![song-page](songs.JPG) 
 <p>All the songs inside the chosen albums.</p>
